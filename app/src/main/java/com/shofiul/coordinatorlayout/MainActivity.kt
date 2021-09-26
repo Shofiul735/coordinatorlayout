@@ -19,6 +19,12 @@ class MainActivity : AppCompatActivity() {
 
             var totalScroll = appBarLayout.totalScrollRange
             if(totalScroll+verticalOffset == 0){
+
+                /*
+                at initial stage verticalOffset is zero then
+                if user scrolls, value keep decreasing so it's a
+                negative value
+                */
                 binding.collapsingToolbar.title = "Title"
             }else{
                 binding.collapsingToolbar.title = ""
